@@ -1,0 +1,60 @@
+N1 = int(input('digite um numero'))
+print('o sucessor do numero digitado é',N1+1)
+print('o antecessor do numero digitado é',N1-1)
+
+n1 = int(input('digite um numero'))
+print('o dobro do valor digitado é',n1*2)
+print('o triplo do valor digitado é',n1*3)
+print('a raiz quadrada do numero digitado é',n1**(1/2))
+
+M1 = int(input('digite sua primeira nota')) #calculo de média escolar
+M2 = int(input('digite sua segunda nota'))
+print('sua media é',(M1+M2)/2)
+nota =(M1+M2)/2
+if nota >=6:
+    print('Parabéns voce foi aprovadp')
+else:
+    print('Reprovado não atingiu a média')
+
+
+Metros = int(input('coloque um valor')) # calculo de conversão de medidas
+print('o valor do metro digitado cv para cm é',Metros*100,'e cv para mm é ',Metros*1000)
+real = float(input('digite quantos reais voce tem'))
+dolar = float(5)
+convertido = real/dolar
+print('com',real,'voce tem',convertido,'em dolares')
+
+Tb = int(input('digite um numero')) # tabuada
+print(f'{Tb}x1=',Tb*1)
+print(f'{Tb}x2=',Tb*2)
+print(f'{Tb}x3=',Tb*3)
+print(f'{Tb}x4=',Tb*4)
+print(f'{Tb}x5=',Tb*5)
+print(f'{Tb}x6=',Tb*6)
+print(f'{Tb}x7=',Tb*7)
+print(f'{Tb}x8=',Tb*8)
+print(f'{Tb}x9=',Tb*9)
+print(f'{Tb}x10=',Tb*10)
+print('a tabuada do numero digitado é essa ')
+
+desc = float(input('digite o valor que você tem em sua carteira,em R$')) # conversão de real para dolar
+dolar = float(5)
+print('o valor descrito em carteira lhe renderia isso em dolares',desc/dolar)
+
+Largura = float(input('digite qual foi o valor medido da largura'))#calculo de medidas
+comprimento = float(input('digite o valor medido do comprimento'))
+print('o valor total em M² é',Largura*comprimento)
+Total =(Largura*comprimento)
+Tinta = int(2)
+print('a quantidade de tinta necessaria para esse metro² é',Total/Tinta)
+
+preco_produtos=float(input('digite o valor do produto')) #aplicação  de desconto
+D=float(5/100)
+D1=(D*preco_produtos)
+D2=(preco_produtos-D1)
+print('valor de desconto sobre o preço do produto',D2)
+
+salario = float(input('digite o valor do seu salario')) # aumento salarial
+aumento = float(15/100)
+aumento_aplicado = (aumento*salario)
+print('seu salario com aumento aplicado de 15% ficara no valor de',aumento_aplicado+salario)
