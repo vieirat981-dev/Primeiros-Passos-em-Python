@@ -1,0 +1,20 @@
+use Gestão_Familia
+go:
+create table pai(
+id_pai int primary key,
+nome varchar(100) NOT NULL
+);
+create table filhos(
+id_filho int primary key,
+nome varchar(100) NOT NULL,
+pai_id int,
+foreign key(pai_id) references pai(id_pai)
+);
+insert into pai (id_pai,nome) values('1','Sergio');
+insert into filhos (id_filho,nome,pai_id) values ('1','Tiago','1');
+select*from filhos
+insert into pai (id_pai,nome) values (99,'Tiago');
+insert into filhos (id_filho,nome,pai_id) values (2,'noah',99);
+select*from filhos
+select*from filhos where id_filho between 1 and 2
+select*from filhos where id_filho IN(1,2)
