@@ -1,0 +1,31 @@
+create table barbeiros(
+id_barbeiros int primary key Identity (1,1),
+nome_barbeiro varchar(100),
+telefone char(20)
+);
+
+create table clientes(
+id_cliente int primary key Identity (1,1),
+nome varchar (100) NOT NULL,
+telefone varchar (100) NOT NULL
+);
+
+create table agendamentos(
+id_agendamentos int primary key Identity (1,1),
+data_agendamento DATETIME,
+tipo_serviço varchar(100),
+barbeiro_id int,
+cliente_id int,
+foreign key (barbeiro_id) references barbeiros(id_barbeiros),
+foreign key(cliente_id) references clientes (id_cliente)
+);
+insert into barbeiros(id_barbeiros,nome_barbeiro) values (1,'Rodolfo')
+insert into clientes (id_cliente,nome) values (1,'Luan')
+insert into agendamentos(id_agendamentos,barbeiro_id,cliente_id) values(1,1,1)
+SELECT 
+    barbeiros.nome_barbeiro,
+    clientes.nome,
+    agendamentos.id_agendamentos
+FROM agendamentos
+INNER JOIN barbeiros ON agendamentos.barbeiro_id = barbeiros.id_barbeiros
+INNER JOIN clientes ON agendamentos.cliente_id = clientes.id_cliente;
