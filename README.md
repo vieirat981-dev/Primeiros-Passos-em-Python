@@ -1,5 +1,5 @@
 
-# Primeiros Passos em Python 🐍
+# Primeiros Passos em Python 🐍 e SQL SERVER
 
 Este repositório contém os meus primeiros scripts desenvolvidos em Python. O objetivo principal foi exercitar a lógica de programação, o uso de operadores aritméticos e estruturas condicionais.
 
@@ -13,3 +13,15 @@ Este repositório contém os meus primeiros scripts desenvolvidos em Python. O o
 
 ### 🎓 Contexto:
 Projeto desenvolvido durante a minha graduação em **Ciência da Computação na FAM** e como parte dos exercícios práticos do **Bootcamp Santander**.
+
+🗄️ Banco de Dados (SQL Server)
+Além da lógica em Python, este repositório documenta meus estudos em Modelagem de Dados Relacionais:
+
+Projeto Barbearia VIP: Estruturação de tabelas com foco em Integridade Referencial (Foreign Keys).
+
+Manipulação de Dados: Práticas de INNER JOIN para relatórios de agendamentos, conectando Clientes e Barbeiros.
+
+Restrições de Integridade: Uso de NOT NULL, PRIMARY KEY e IDENTITY.
+
+🎓 Contexto:
+Estudos práticos realizados como parte da disciplina de Banco de Dados na graduação de Ciência da Computação (FAM) e aprofundamento técnico através do curso de Modelagem de Dados da Fundação Bradesco.
